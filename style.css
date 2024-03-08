@@ -1,0 +1,109 @@
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .center{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            body{
+                width:100%;
+                height: 100vh;
+                background: #000;
+                flex-direction: column;
+            }
+            h1{
+                color:#ff0;
+            }
+            .container{
+                width:400px;
+                height: 400px;
+                background: #E8F0CF;
+                flex-direction: column;
+                gap:3px;
+                position: relative;
+                border-radius:10px;
+            }
+            .lingam{
+                width: 90px;
+                height: 180px;
+                background: #000;
+                border-radius: 50px 50px 10px 10px;
+                flex-direction: column;
+                gap:3px;
+                
+            }
+            .lingam::after{
+                content:"";
+                display: block;
+                width:10px;
+                height:40px;
+                background: red;
+                border-radius:50%;
+                position:absolute;
+            }
+            .l1,.l2,.l3{
+                width:80px;
+                height: 10px;
+                background: #fff;
+                border-radius: 10px;
+            }
+            .sakthi{
+                width: 300px;
+                height: 40px;
+                background: #000;
+                border-radius: 10px 100px 10px 10px;
+            }
+            .vishnu{
+                width: 200px;
+                height: 40px;
+                background: #000;
+                border-radius: 10px;
+            }
+            .brahma{
+                width: 90px;
+                height: 40px;
+                background: #000;
+                border-radius: 10px;
+          
+            }
+            .bhoomi{
+                width: 200px;
+                height: 40px;
+                background: #000;
+                border-radius: 10px;
+         
+            }
+            .soolam{
+                width:10px;
+                height:380px;
+                background: #000;
+                border-radius: 100% 100% 0 0;
+                position: absolute;
+                bottom: 0;
+                right:90px;
+            }
+            .soolam::before{
+                content:"";
+                display: block;
+                width:10px;
+                height:90px;
+                background: #000;
+                border-radius: 100% 100% 0 0;
+                position: absolute;
+                left:30px;
+                transform: rotateZ(45deg);
+            }
+              .soolam::after{
+                content:"";
+                display: block;
+                width:10px;
+                height:90px;
+                background: #000;
+                border-radius: 100% 100% 0 0;
+                position: absolute;
+                right:30px;
+                transform: rotateZ(-45deg);
+            }
